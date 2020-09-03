@@ -9,21 +9,23 @@
   	<meta name="viewport" content="width=device-width initial-scale=1">
   </head>
   <body>
-    <p>
-      <h1>freeCodeCamp Survey Form</h1>
-      <h4>Thank you for taking the time to help us improve the platform</h4>
-    </p>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
     <main>
       <div id="outline">
-       <form>
-          <label class="textbox-heading" for="name">Name</label>
-          <input type="text" placeholder="Enter your Name"class="textbox"><br>
-          <label class="textbox-heading" for="email">Email</label>
-          <input type="text" placeholder="Enter your Email"><br>
-          <label class="textbox-heading" for="age">Age(optional)</label>
-          <input type="text" placeholder="Age"><br>
+       <form id="survey-form">
+          <label class="textbox-heading" for="name"  id="name-label">Name</label>
+          <input type="text" id="name" placeholder="Enter your Name"class="textbox" required="true"><br>
+
+          <label class="textbox-heading" for="email" id="email-label">Email</label>
+          <input type="email" id="email" placeholder="Enter your Email" required="true"><br>
+
+          <label class="textbox-heading" for="number" id="number-label">Age(optional)</label>
+          <input type="number" id="number" placeholder="Age" name="number" min="10" max="99"><br>
+
           <label class="textbox-heading" for="role">Which option best describes your current role?</label>
-          <select id="role">
+
+          <select id="dropdown">
             <option>Select current role</option>
             <option>Student</option>
             <option>Full Time Job</option>
@@ -38,7 +40,8 @@
           <input type="radio" id="notsure" name="recommend" value="notsure">
           <label for="notsure">Not sure</label><br>
           <label class="textbox-heading"for="feature">What is your favorite feature of freeCodeCamp?</label>
-          <select id="feature">
+
+          <select id="dropdown">
             <option>Select an option</option>
             <option>Challenges</option>
             <option>Projects</option>
@@ -67,8 +70,8 @@
           <input type="checkbox" id="op9" name="op9" value="backend prj">
           <label for="op9">Additional Courses</label><br>
           <p>Any comments or suggestions?</p>
-          <textarea name="message" rows="10" cols="90">Enter your comment here..</textarea><br>
-          <a href=""><button>Submit</button></a>
+          <textarea name="message" rows="10" cols="90">Enter your comment here..</textarea><br><br>
+          <a href=""><button id="submit">Submit</button></a>
        </form>
      </div>
    </main>
