@@ -1,0 +1,50 @@
+body{
+	padding: 20px;
+	margin: 0 auto;
+}
+
+
+header img{
+	transform: scale(0.6);
+	height: 50px;
+}
+header ul{
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	justify-content: center;
+  	
+  }
+header{
+	display: flex;
+	flex-direction: column;
+
+}
+
+ul li{
+	padding: 0.5em 1em;
+	text-align: center;
+}
+li a{
+	text-decoration: none;
+	font-size: 1.1rem;
+}
+h3{
+	text-align: center;
+}
+@media screen and (min-width:700px){
+	header ul{
+		flex-direction: row;
+		justify-content: space-between;
+		}
+	header{
+		flex-direction: row;
+		justify-content: space-between;
+
+	}
+	header img{
+		
+	}
+}
