@@ -26,7 +26,7 @@ form{
 }
 [type="text"]{
 	width:inherit;
-	height: 27px;
+	height: 30px;
 	border-radius: 5px;
 	font-size: 0.9em;
 	padding-left: 0.8em;
@@ -34,7 +34,7 @@ form{
 }
 #role, #feature{
 	width:35.4rem;
-	height: 32px;
+	height: 34px;
 	border-radius: 5px;
 	font-size: 0.9em;
 	padding-left: 0.8em;
@@ -55,4 +55,8 @@ button{
 	cursor: pointer;
 	height: 45px;
 	width:35.9rem;
+}
+.textbox-heading{
+	display: block;
+	padding:1em 0 0.4em 0;
 }
