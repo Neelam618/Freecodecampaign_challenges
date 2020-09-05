@@ -4,8 +4,6 @@ body{
 	font-family: 'Lato', sans-serif;
 	background-color: rgb(240, 230, 238);
 }
-
-
 nav img{
 	transform: scale(0.6);
 	height: 50px;
@@ -26,7 +24,7 @@ nav{
 }
 
 ul li{
-	padding: 0.5em 1em;
+	padding: 0.5em 3em;
 	text-align: center;
 }
 li a{
@@ -42,6 +40,7 @@ h3{
 }
 #email{
 	width:300px;
+	height: 25px;
 }
 #submit{
 	
@@ -65,8 +64,8 @@ h3{
 .main{
 	display: flex;
 	flex-direction: column;
-	width:700px;
-	justify-content: center;
+	width:400px;
+	margin: 0 auto;
 	margin-top: 2em;
 	}
  video{
@@ -120,10 +119,7 @@ footer{
 	justify-content: center;
 	height: 125px;
     width: 20px;
-    margin: 3em;
-}
-i.fa.fa-3x{
-	/*align-self: center;*/
+    margin: 1em 3em 1em 0;
 }
 .grid{
 	display: flex;
@@ -156,7 +152,10 @@ i.fa.fa-3x{
 	.widget-content{	
 		align-content: center;
 	}
-	.grid{
-		justify-content: center;
+	.main{
+			width:800px;
+	}
+	.icon{
+		margin: 0 4em 1em 0;
 	}
 }
