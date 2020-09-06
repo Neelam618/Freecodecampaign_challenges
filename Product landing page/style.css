@@ -4,6 +4,9 @@ body{
 	font-family: 'Lato', sans-serif;
 	background-color: rgb(240, 230, 238);
 }
+#main-content{
+		margin-top: 180px;
+	}
 nav img{
 	transform: scale(0.6);
 	height: 50px;
@@ -159,4 +162,9 @@ footer{
 	.icon{
 		margin: 0 4em 1em 0;
 	}
+	#main-content{
+		margin-top: 20px;
+	}
+
+
 }
