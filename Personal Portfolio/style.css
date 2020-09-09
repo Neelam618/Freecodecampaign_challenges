@@ -3,6 +3,9 @@ body{
 	margin: 0;
 	box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 /*Navbar*/
 #navbar{
 	text-align: right;
@@ -20,8 +23,9 @@ body{
 	margin-right: 1em;
 }
 .navlink:hover{
-	background-color: pink;
+	background-color: rgb(133, 48, 67);
 }
+
 /*Welcome section*/
 #welcome-section{
 	height: 100vh;
@@ -30,6 +34,7 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background-image: linear-gradient(45deg, rgba(93, 232, 95, 1), rgba(93, 232, 95, 0));
 }
 h1, h4{
 	color: white;
@@ -45,16 +50,20 @@ h4{
 	font-size: 2rem;
 	font-weight: 100;
 }
-/*Project section*/
 
+/*Project section*/
 #projects{
 	background-color: rgb(77, 50, 97);
 	text-align: center;
-
 }
 h2{
-	margin-top: 0;
 	padding-top: 3em;
+	color: white;
+	margin: 0 auto;
+	margin-bottom: 1em;
+	width: fit-content;
+	border-bottom: 1px solid white;
+	font-size: 2rem;
 }
 .container{
 	width: 65%;
@@ -84,12 +93,6 @@ a img{
 	height: inherit;
 	object-fit: cover;
 }
-h2{
-	margin: 0 auto;
-	margin-bottom: 1em;
-	width: fit-content;
-	border-bottom: 1px solid black;
-}
 /*code*/
 .code{
 	display: none;
@@ -98,10 +101,8 @@ h2{
 .tile:hover .code{
 	 display:inline;
 	 font-weight: 600;
-
 }
 button{
-	
 	border:none;
 	background-color: rgb(237, 144, 57);
 	padding: 0.5em 1em;
@@ -115,16 +116,50 @@ button:hover{
 	background-color: #be3144;
 }
 /*contact*/
-.contact{
-	height: 80vh;
+#contact{
+	height: 60%;
 	background-color: rgb(51, 16, 30);
 	padding-top:5em;
 	text-align: center;
+	padding: 10em 0;
 }
-.contact h4{
+#contact h4{
 	font-size: 1.2rem;
 	color: white;
 }
+/*contact*/
+.connect{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 4em;
+
+}
+#profile-link{
+	margin: 0.7em;
+	color: white;
+	text-decoration: none;
+	font-size: 1.5rem;
+	position: relative;	
+}
+/*footer*/
+footer{
+	background-color: rgb(51, 16, 30);
+	padding: 2em 0;
+	border-top: 3px solid #be3144;
+}
+.info{
+	color: white;
+	display: flex;
+	justify-content: space-evenly;
+}
+.info p{
+	margin:1em;
+}
+#profile-link:hover{
+	top: 10px;
+}
+
 @media screen and (max-width: 1080px){
 	.container{
 		width: 65%;
@@ -142,3 +177,4 @@ button:hover{
 		grid-column-start: 1;
 	}
 }
+	
